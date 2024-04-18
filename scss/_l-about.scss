@@ -1,1 +1,48 @@
-.about {}
+.about {
+  & .container {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 79px;
+    padding-bottom: 119px;
+    background: url(../assets/about-bg.png) center left -40px no-repeat;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 639px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -79px;
+      left: -63px;
+      z-index: 1;
+      display: inline-block;
+      height: 106px;
+      width: 106px;
+      background: url(../assets/quote.svg) center no-repeat;
+    }
+
+    &-text {
+      position: relative;
+      z-index: 2;
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      text-align: justify;
+      color: #000;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 52px 0 0;
+
+      & > img {
+        max-width: 100px;
+      }
+    }
+  }
+}

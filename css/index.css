@@ -237,3 +237,45 @@ img {
   bottom: 10px;
   right: 57px;
 }
+
+.about .container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 79px;
+  padding-bottom: 119px;
+  background: url(../assets/about-bg.png) center left -40px no-repeat;
+}
+.about__content {
+  position: relative;
+  max-width: 639px;
+}
+.about__content::before {
+  content: "";
+  position: absolute;
+  top: -79px;
+  left: -63px;
+  z-index: 1;
+  display: inline-block;
+  height: 106px;
+  width: 106px;
+  background: url(../assets/quote.svg) center no-repeat;
+}
+.about__content-text {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: justify;
+  color: #000;
+}
+.about__content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 52px 0 0;
+}
+.about__content-buttons > img {
+  max-width: 100px;
+}
