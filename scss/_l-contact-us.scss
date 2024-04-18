@@ -1,1 +1,70 @@
-.contact-us {}
+.contact-us {
+  padding: 124px 0 114px;
+
+  & .container {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  &__figure {
+    flex: 0 0 auto;
+
+    &-image {
+      max-width: 522px;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin: 0 0 137px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 111%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #371611;
+  }
+
+  &__email {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 636px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 0 35px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 142%;
+      color: #000;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 24px;
+        width: 24px;
+        background: url(../assets/envelope.svg) center no-repeat;
+        background-size: 24px;
+      }
+    }
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142%;
+    color: #000;
+  }
+}
