@@ -1,3 +1,108 @@
 .first-screen {
-  padding: 320px 0;
+  overflow: hidden;
+
+  & .container {
+    position: relative;
+    padding-top: 320px;
+    padding-bottom: 320px;
+  }
+
+  &__title {
+    margin: 0 0 11px;
+    font-weight: 900;
+    font-size: 92px;
+    line-height: 87%;
+    text-transform: uppercase;
+    color: #4f3211;
+  }
+
+  &__description {
+    margin: 0 0 69px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 446px;
+    width: 100%;
+    padding: 18px 23px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(90deg, #74b617 0%, #c8d528 100%);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(../assets/arrow-right.svg) center no-repeat;
+      background-size: 16px;
+      transition: transform ease-in 0.1s;
+      will-change: transform;
+      cursor: pointer;
+    }
+
+    &:hover::after {
+      transform: translateX(6px);
+    }
+  }
+
+  &__cat {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &_one {
+      top: -135px;
+      left: 262px;
+    }
+
+    &_two {
+      top: -69px;
+      right: 220px;
+    }
+
+    &_three {
+      top: 207px;
+      right: -90px;
+    }
+
+    &_four {
+      bottom: 66px;
+      right: 667px;
+    }
+
+    &_five {
+      bottom: 275px;
+      right: 371px;
+    }
+
+    &_six {
+      bottom: 10px;
+      right: 57px;
+    }
+  }
 }
