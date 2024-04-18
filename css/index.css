@@ -193,6 +193,8 @@ img {
   padding-bottom: 320px;
 }
 .first-screen__title {
+  position: relative;
+  z-index: 2;
   margin: 0 0 11px;
   font-weight: 900;
   font-size: 92px;
@@ -201,14 +203,21 @@ img {
   color: #4f3211;
 }
 .first-screen__description {
+  position: relative;
+  z-index: 2;
   margin: 0 0 69px;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   color: #000;
 }
+.first-screen__buttons {
+  position: relative;
+  z-index: 2;
+}
 .first-screen__cat {
   position: absolute;
+  z-index: 1;
   display: block;
   max-width: 100%;
   height: auto;
@@ -278,4 +287,58 @@ img {
 }
 .about__content-buttons > img {
   max-width: 100px;
+}
+
+.mission {
+  position: relative;
+  background: linear-gradient(139deg, #f4b81a 5.19%, #8e440f 100%);
+}
+@media screen and (max-width: 1512px) {
+  .mission {
+    position: static;
+  }
+}
+.mission .container {
+  position: static;
+  padding-top: 167px;
+  padding-bottom: 252px;
+  background: url(../assets/mission-bg.png) center left 20px no-repeat;
+}
+@media screen and (max-width: 1512px) {
+  .mission .container {
+    position: relative;
+  }
+}
+.mission .container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 64px;
+  left: 50%;
+  max-width: 883px;
+  width: calc(100vw - 709px);
+  height: 812px;
+  background: url(../assets/mission-food.png) left center no-repeat;
+}
+@media screen and (max-width: 1800px) {
+  .mission .container::before {
+    left: auto;
+    right: 0;
+  }
+}
+.mission__title {
+  margin: 0 0 44px;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: #371611;
+}
+.mission__text {
+  max-width: 1088px;
+  margin: 0 0 44px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 106%;
+  color: #fff;
 }

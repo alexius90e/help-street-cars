@@ -8,6 +8,8 @@
   }
 
   &__title {
+    position: relative;
+    z-index: 2;
     margin: 0 0 11px;
     font-weight: 900;
     font-size: 92px;
@@ -17,6 +19,8 @@
   }
 
   &__description {
+    position: relative;
+    z-index: 2;
     margin: 0 0 69px;
     font-weight: 400;
     font-size: 24px;
@@ -24,8 +28,14 @@
     color: #000;
   }
 
+  &__buttons {
+    position: relative;
+    z-index: 2;
+  }
+
   &__cat {
     position: absolute;
+    z-index: 1;
     display: block;
     max-width: 100%;
     height: auto;
