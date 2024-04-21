@@ -1,8 +1,10 @@
 .about {
+  margin-top: -100px;
+
   & .container {
     display: flex;
     justify-content: flex-end;
-    padding-top: 79px;
+    padding-top: calc(80px + 100px);
     padding-bottom: 119px;
     background: url(../assets/about-bg.png) center left -40px no-repeat;
   }
