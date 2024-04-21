@@ -263,12 +263,12 @@ img {
 }
 
 .about {
-  margin-top: -100px;
+  margin-top: -300px;
 }
 .about .container {
   display: flex;
   justify-content: flex-end;
-  padding-top: 180px;
+  padding-top: 380px;
   padding-bottom: 119px;
   background: url(../assets/about-bg.png) center left -40px no-repeat;
 }
